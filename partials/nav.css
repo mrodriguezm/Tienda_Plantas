@@ -1,0 +1,78 @@
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#009a02;
+    height:80px;
+}
+
+.logo{
+    color:white;
+}
+
+
+
+h2, h3{
+    color:#009a02;
+}
+
+.navbar-desktop ul{
+    display:flex;
+    justify-content: space-around;
+    list-style:none;
+    width:300px;
+
+        li a{
+        color:white;
+        text-decoration:none;
+        cursor:pointer;
+        font-size:20px;
+        }
+}
+
+
+.navbar-mobile{
+    display:none;
+    background-color:white;
+    ul{
+        display:flex;
+    justify-content: space-around;
+    list-style:none;
+    height:80px;
+    align-items: center;
+        li a{
+            color:#009a02;
+            text-decoration:none;
+            cursor:pointer;
+            font-size:20px;
+        }
+    }
+}
+
+button#btncarrito , button#hamburger{
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+.hamburger{
+    display:none;
+}
+
+@media (max-width:760px){
+
+    .navbar-mobile.active{
+        display:block;
+    }
+
+    .hamburger{
+        display: block;
+        margin-inline-start: 50vw;
+    }
+
+    .navbar-desktop{
+        display:none;
+    }
+}

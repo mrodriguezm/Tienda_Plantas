@@ -1,0 +1,153 @@
+main{
+    padding-left:15%;
+    padding-right:15%;
+   padding-top:10px;
+}
+
+#productos_container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(11.25rem, 100%), 1fr));
+    grid-gap:10px;
+    text-align:center;
+
+    .producto{
+        background-color:white;
+        border-radius:10px;
+        padding:10px;
+    }
+
+    img{
+        
+        width:200px;
+        
+        border-radius:5px;
+    }
+}
+
+.carrito{
+    position:fixed;
+    right: 10vh;
+    background-color: white;
+    top: 10vh;
+    padding: 10px;
+    border-radius:10px;
+    width:20rem;
+    border:1px solid #009a02;
+}
+
+.btnPlanta{
+    background-color:#009a02;
+    color:white;
+    padding:5px;
+    border:0px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:5px;
+    font-size: 16px;
+}
+
+.descripcion-planta{
+    text-align: justify;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.precio-planta{
+    display: inline-block;
+    background-color: #f0ad4e; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 5px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cerrarbtn{
+    text-align:right;
+
+    button{
+        background-color:red;
+        color:white;
+        cursor:pointer;
+        padding:5px;
+        border-radius:5px;
+        border:0px;
+    }
+}
+
+.hidden{
+    display:none;
+}
+
+.cabecera-carrito{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div#listaCarrito{
+    text-align: center;
+    margin: 10px;
+
+    table{
+        width:-webkit-fill-available;
+
+        tr{
+            padding-top:5px;
+            padding-bottom:5px;
+            border-bottom:1px solid #f0ad4e;
+        }
+    }
+}
+
+.style-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+
+    .btnComprar{
+       
+    padding:5px;
+   
+
+    }
+
+    .btnVaciar{
+
+        
+    padding:5px;
+   
+    }
+}
+
+.btnComprar{
+    background-color:#009a02;
+color:white;
+
+border:0px;
+border-radius:5px;
+cursor:pointer;
+margin-top:5px;
+font-size: 16px;
+
+}
+
+.btnVaciar{
+
+    background-color:#ff3636;
+color:white;
+
+border:0px;
+border-radius:5px;
+cursor:pointer;
+margin-top:5px;
+font-size: 16px;
+}
+
+@media (min-width: 760px) { /* Ajusta el tamaño según sea necesario */
+    #productos_container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
